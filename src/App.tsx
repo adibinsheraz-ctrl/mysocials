@@ -141,7 +141,7 @@ export default function App() {
           onPointerMove={handlePointerMove}
           onPointerLeave={handlePointerLeave}
           onClick={handleClick}
-          className={`pointer-events-auto h-[108vh] sm:h-[128vh] lg:h-[138vh] w-auto max-w-none object-contain anim-rise-in select-none transition-opacity duration-300 ${
+          className={`pointer-events-auto h-[88vh] min-[375px]:h-[95vh] min-[414px]:h-[100vh] sm:h-[115vh] md:h-[120vh] lg:h-[130vh] xl:h-[135vh] w-auto max-w-none object-contain anim-rise-in select-none transition-opacity duration-300 ${
             isOverPerson ? 'cursor-pointer hover:opacity-95' : 'cursor-default'
           }`}
           style={{ animationDelay: '300ms' }}
