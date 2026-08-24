@@ -14,7 +14,7 @@ export default function App() {
   // Pre-load image into offscreen canvas for pixel-perfect alpha hit testing
   useEffect(() => {
     const img = new Image();
-    img.src = '/portrait.png';
+    img.src = '/portrait.svg';
     img.crossOrigin = 'anonymous';
     img.onload = () => {
       const canvas = document.createElement('canvas');
@@ -136,7 +136,7 @@ export default function App() {
       <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none overflow-visible">
         <img
           ref={imgRef}
-          src="/portrait.png"
+          src="/portrait.svg"
           alt="Adi Bin Sheraz"
           onPointerMove={handlePointerMove}
           onPointerLeave={handlePointerLeave}
