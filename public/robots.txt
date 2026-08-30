@@ -1,6 +1,6 @@
 # ==========================================
 # Robots.txt — Adi Bin Sheraz Portfolio
-# https://adiagency.netlify.app
+# https://adisocial.vercel.app
 # ==========================================
 
 # Default: allow all crawlers everything
@@ -53,7 +53,7 @@ Disallow: /api/
 Disallow: /*.json$
 
 # Sitemaps
-Sitemap: https://adiagency.netlify.app/sitemap.xml
+Sitemap: https://adisocial.vercel.app/sitemap.xml
 
 # Crawl-delay for polite bots (Bing honors this)
 User-agent: Bingbot
