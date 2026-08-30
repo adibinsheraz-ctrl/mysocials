@@ -66,9 +66,8 @@
   <!-- ======================================== -->
   <!-- PRECONNECT (Performance)                  -->
   <!-- ======================================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://images.higgs.ai" />
+  <link rel="preconnect" href="https://images.higgs.ai" crossorigin />
+  <link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin />
 
   <!-- ======================================== -->
   <!-- FONTS                                     -->
@@ -82,12 +81,18 @@
   <!-- GOOGLE ANALYTICS + SITE VERIFICATION      -->
   <!-- ======================================== -->
   <meta name="google-site-verification" content="-Wq-mSHTSuHOS28O2JqJ4X69NQ9n2N0OI-gyu5lX5mo" />
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-YSLX1GFW2L"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-YSLX1GFW2L');
+    // Defer loading GT until after page load
+    window.addEventListener('load', function() {
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YSLX1GFW2L';
+      s.async = true;
+      document.head.appendChild(s);
+    });
   </script>
 
   <!-- ======================================== -->
