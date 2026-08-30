@@ -142,8 +142,6 @@ export default function App() {
           ref={imgRef}
           src="/portrait.svg"
           alt="Adi Bin Sheraz"
-          width={800}
-          height={1200}
           onPointerMove={handlePointerMove}
           onPointerLeave={handlePointerLeave}
           onClick={handleClick}
