@@ -110,10 +110,10 @@ export default function App() {
     <main id="main-content" role="main" aria-label="Adi Bin Sheraz — Portfolio" className="relative h-[100dvh] w-full overflow-hidden bg-black text-cream font-hn select-none">
       {/* Background image (full-bleed, behind everything) */}
       <img
-        src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260729_022513_486985a2-ac8c-4278-91a8-071dcd9fcaff.png&w=1280&q=85"
+        src="/background.webp"
         alt="Dark moody background — Adi Bin Sheraz portfolio atmosphere"
         width={1280}
-        height={853}
+        height={714}
         className="absolute inset-0 h-full w-full object-cover anim-fade-in"
         loading="eager"
         fetchPriority="high"
