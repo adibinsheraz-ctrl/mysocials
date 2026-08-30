@@ -1,0 +1,60 @@
+# ==========================================
+# Robots.txt — Adi Bin Sheraz Portfolio
+# https://adiagency.netlify.app
+# ==========================================
+
+# Default: allow all crawlers everything
+User-agent: *
+Allow: /
+
+# Googlebot — full access
+User-agent: Googlebot
+Allow: /
+
+# Bingbot — full access
+User-agent: Bingbot
+Allow: /
+
+# Applebot — full access (Siri / Apple Search)
+User-agent: Applebot
+Allow: /
+
+# Social media crawlers — full access (for link previews)
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# Block AI training crawlers (optional — uncomment to enable)
+# User-agent: GPTBot
+# Disallow: /
+#
+# User-agent: ChatGPT-User
+# Disallow: /
+#
+# User-agent: CCBot
+# Disallow: /
+#
+# User-agent: Google-Extended
+# Disallow: /
+
+# Block site analytics from being crawled
+Disallow: /api/
+Disallow: /*.json$
+
+# Sitemaps
+Sitemap: https://adiagency.netlify.app/sitemap.xml
+
+# Crawl-delay for polite bots (Bing honors this)
+User-agent: Bingbot
+Crawl-delay: 1

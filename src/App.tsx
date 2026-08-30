@@ -8,7 +8,7 @@ export default function App() {
   const [isOverPerson, setIsOverPerson] = useState(false);
 
   useEffect(() => {
-    document.title = 'Adi Bin Sheraz \u2014';
+    document.title = 'Adi Bin Sheraz — Full Stack Developer & Digital Crafter | Portfolio';
   }, []);
 
   // Pre-load image into offscreen canvas for pixel-perfect alpha hit testing
@@ -107,12 +107,14 @@ export default function App() {
   ];
 
   return (
-    <section className="relative h-[100dvh] w-full overflow-hidden bg-black text-cream font-hn select-none">
+    <main id="main-content" role="main" aria-label="Adi Bin Sheraz — Portfolio" className="relative h-[100dvh] w-full overflow-hidden bg-black text-cream font-hn select-none">
       {/* Background image (full-bleed, behind everything) */}
       <img
         src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260729_022513_486985a2-ac8c-4278-91a8-071dcd9fcaff.png&w=1280&q=85"
-        alt=""
+        alt="Dark moody background — Adi Bin Sheraz portfolio atmosphere"
         className="absolute inset-0 h-full w-full object-cover anim-fade-in"
+        loading="eager"
+        fetchPriority="high"
       />
 
       {/* Marquee name (z-10, behind front cutout) */}
@@ -149,7 +151,7 @@ export default function App() {
       </div>
 
       {/* Header (z-30) */}
-      <header className="absolute inset-x-0 top-0 z-30 flex items-center justify-between px-6 pt-6 sm:px-10 sm:pt-8">
+      <header role="banner" className="absolute inset-x-0 top-0 z-30 flex items-center justify-between px-6 pt-6 sm:px-10 sm:pt-8">
         {/* Top Left Signature Name */}
         <div
           className="anim-fade-up select-none flex items-center"
@@ -163,7 +165,7 @@ export default function App() {
         {/* Right cluster */}
         <div className="flex items-center gap-6 sm:gap-10 lg:gap-14">
           {/* Nav / Message button */}
-          <nav className="flex items-center">
+          <nav aria-label="Primary navigation" className="flex items-center">
             {navItems.map((item, idx) => (
               <button
                 key={item.label}
@@ -183,7 +185,7 @@ export default function App() {
           </nav>
 
           {/* Top Social Icons (Desktop) */}
-          <div className="hidden sm:flex items-center gap-4">
+          <div className="hidden sm:flex items-center gap-4" aria-label="Social media links">
             {socialItems.map((item, idx) => {
               const IconComponent = item.icon;
               return (
@@ -206,7 +208,7 @@ export default function App() {
       </header>
 
       {/* Footer (z-30 on mobile, sm:z-10 on desktop) */}
-      <footer className="absolute inset-x-0 bottom-0 z-30 sm:z-10 flex items-end justify-between px-6 pb-5 sm:px-10 sm:pb-8 text-xs sm:text-sm leading-relaxed font-hn text-cream">
+      <footer role="contentinfo" aria-label="Footer with role and contact information" className="absolute inset-x-0 bottom-0 z-30 sm:z-10 flex items-end justify-between px-6 pb-5 sm:px-10 sm:pb-8 text-xs sm:text-sm leading-relaxed font-hn text-cream">
         {/* Footer left */}
         <div
           className="anim-fade-up flex flex-col"
@@ -243,6 +245,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-    </section>
+    </main>
   );
 }
